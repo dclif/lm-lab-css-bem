@@ -6,29 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
 </head>
 
 <body>
-    <h1>BEM Wars</h1>
+    <h1 class="title">BEM Wars</h1>
     <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
+
+        <div class="card card__dark">
+            <h2 class="card__title">The Dark Side</h2>
+            <img class="card__image" src="./images/vader.jpeg">
+            <section class="card__image" class="card__container">
             <p>Nesting!</p>
             <p>Conflict!</p>
             <p>Specificity Wars!</p>
             <p>Cookies</p>
+            </section>
         </div>
 
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
+        <div class="card card__light">
+            <h2 class="card__title">The Force</h2>
+            <img class="card__image" src="./images/yoda.jpeg">
+            <section class="card__container">
             <p>Love</p>
             <p>Beauty</p>
             <p>CSS that Scales!</p>
             <p>Great warrior. Wars not make one great!</p>
+        </section>
         </div>
+
     </div>
 </body>
 
